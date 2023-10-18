@@ -4,7 +4,6 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
-
 @Data
 public class RequestUser {
     @NotNull(message = "Email cannot be null")
@@ -19,5 +18,4 @@ public class RequestUser {
     @NotNull(message = "Password cannot be null")
     @Size(min = 8, message = "Password not be less than 8 characters")
     private String pwd;
-
 }
